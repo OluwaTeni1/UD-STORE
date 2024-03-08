@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALl Products| UD Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+        
+        <div class="container">
+            <header>
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html">
+                        <img src="img/logo.png" width="125px">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="login.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="img/cart.png" id="cart-icon" width="30px" height="30px">
+                    <img src="img/menu.png" class="menu-icon"
+                    onclick="menutoggle()">
+                </div>
+            </header>
+        </div>
+
+        <section class="cart">
+            <div class="cart-box">
+                <div class="cart-head">
+                    <h2>Your Cart</h2>
+                    <div class="cart-close" id="close-cart"><i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="cart-cont-main">
+        
+                </div>
+                <div class="cart-total">
+                    <div class="total">Total Price</div>
+                    <div class="total-price">$0.00</div>
+        
+                </div>
+                <button class="btn-buy">Buy Now</button>
+            </div>
+        </section>
+
+        
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>All Products</h2>
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Sort by price</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by rating</option>
+                    <option>Sort by sale</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/product-1.jpg" class="product-image">
+                    <h4 class="product-title">Red Printed Tshirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-2.jpg" class="product-image">
+                    <h4 class="product-title">Sneakers</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-3.jpg" class="product-image">
+                    <h4 class="product-title">Grey Joggers</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-4.jpg" class="product-image">
+                    <h4 class="product-title">Blue Printed Tshirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/product-1.jpg" class="product-image">
+                    <h4 class="product-title">Red Printed Tshirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-2.jpg" class="product-image">
+                    <h4 class="product-title">Sneakers</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-3.jpg" class="product-image">
+                    <h4 class="product-title">Grey Joggers</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-4.jpg" class="product-image">
+                    <h4 class="product-title">Blue Printed Tshirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <p class="price">$50.00</p>
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#10140;</span>
+            </div>
+        </div>
+        
+        
+
+       
+
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Androud and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="img/play-store.png">
+                            <img src="img/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="img/logo2.png" alt="">
+                        <p>Our purpose is to sustainably make the pleasure and benefits
+                            of sports accesible to the many
+                        </p>
+                    
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 - UD Store</p>
+            </div>
+        </div>
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "100%";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="script.js"></script>
+
+</body>
+</html> 
