@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UD Store</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -23,18 +23,49 @@
                     </div>
                     <nav>
                         <ul id="MenuItems">
-                            <li><a href="">Home</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Male Products</a></li>
+                            <li><a href="product-2.html">Female Products</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="login.html">Account</a></li>
                         </ul>
                     </nav>
-
+                    <img src="img/cart.png" id="cart-icon" width="30px" height="30px">
                     <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
                 </div>
             </header>
         </div>
     </div>
+
+    <section class="contact-us">
+        <div class="container-contact">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="name" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-phone"></i>+1 123 456 789</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@sample.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>12 City Street, City, Ireland</p>
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <footer>
         <div class="container">

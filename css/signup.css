@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#ff523b, #ffe7ac);
+    background-color: #ffe9e6;
 }
 .body{
     height: 100vh;
@@ -22,7 +22,7 @@ body {
 .regis-container {
     max-width: 700px;
     width: 100%;
-    background-color: rgba(2, 27, 78, 0.498);
+    background-color: #ffb6ad37;;
     margin-top: 0.5rem;
     padding: 25px 30px;
     border: 1px solid var(--bg-color);
@@ -116,7 +116,10 @@ form .button {
     height: 45px;
     margin: 35px 0
 }
-
+.gender-details input{
+    background: #fff;
+    color: #fff;
+}
 form .button input {
     height: 100%;
     width: 100%;
@@ -128,12 +131,13 @@ form .button input {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #1a0058, #ffb700);
+    background:  #ff523b;
+    transition: .25s;
 }
 
 form .button input:hover {
     /* transform: scale(0.99); */
-    background: linear-gradient(-135deg, #1a0058, #ffb700);
+    background:  #780e00;
 }
 
 .option a {
@@ -141,8 +145,8 @@ form .button input:hover {
     place-items: center;
     align-items: center;
     margin-bottom: 1rem;
-    padding: 2px;
-    color: var(--bg-color);
+    padding-left: 4px;
+    color: #ff523b;
 }
 
 @media(max-width: 584px) {

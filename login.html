@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALl Products| UD Store</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
@@ -22,16 +24,34 @@
             <nav>
                 <ul id="MenuItems">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="product.html">Male Products</a></li>
+                    <li><a href="product-2.html">Female Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="login.html">Account</a></li>
                 </ul>
             </nav>
-            
+            <img src="img/cart.png" id="cart-icon" width="30px" height="30px">
             <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
+    <section class="cart">
+        <div class="cart-box">
+            <div class="cart-head">
+                <h2>Your Cart</h2>
+                <div class="cart-close" id="close-cart"><i class="fa-solid fa-x"></i></div>
+            </div>
+            <div class="cart-cont-main">
 
+            </div>
+            <div class="cart-total">
+                <div class="total">Total Price</div>
+                <div class="total-price">$0.00</div>
+
+            </div>
+            <button class="btn-buy">Buy Now</button>
+        </div>
+    </section>
     <div class="body">
         <div class="login-container">
             <form action="#">
@@ -58,7 +78,7 @@
             <div class="facebook">
                 <a href=""><i class='bx bxl-facebook-circle'></i>Sign in With Facebook</a>
             </div>
-            <div class="option">Don't have an account?<a href="register.html">Sign Up</a></div>
+            <div class="option">Don't have an account?<a href="signup.html">Sign Up</a></div>
         </div>
     </div>
 
@@ -117,6 +137,7 @@
         }
     }
 </script>
+        <script src="script.js"></script>
 
 </body>
 </html>

@@ -8,4 +8,173 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #ffe9e6;
+}
+
+.body {
+    display: grid;
+    margin-top: 5rem;
+    width: 100%;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+
+.login-container {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container form .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+    position: relative;
+    color: #563434;
+}
+
+.login-container form .input-box {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.login-container form .input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.login-container form .underline::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.login-container form .underline::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ffe9e6;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.login-container form .input-box input:focus~.underline::after,
+.login-container form .input-box input:valid~.underline::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.login-container form .button {
+    margin: 40px 0 20px 0;
+}
+
+.login-container .input-box input[type="submit"] {
+    background: #563434;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container .input-box input[type="submit"]:hover {
+    background: #fff;
+    color: #563434;
+    transition: 0.5s all linear;
+    border: 1px solid #563434;
+}
+
+.login-container .option {
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.login-container .option div {
+    display: flex;
+    align-items: center;
+}
+
+.option a {
+    font-size: 0.85rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 5px;
+    color: #ff523b;;
+}
+
+.login-container .google a,
+.login-container .twitter a,
+.login-container .facebook a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 50px;
+    color: #eee;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.login-container .google i,
+.login-container .twitter i,
+.login-container .facebook i {
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.login-container .google a {
+    background: #ff523b;
+    margin: 20px 0 15px 0;
+}
+
+.login-container .google a:hover {
+    background: #780e00;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.login-container .twitter a {
+    background: #ff523b;
+    margin: 20px 0 15px 0;
+}
+
+.login-container .twitter a:hover {
+    background: #780e00;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.login-container .facebook a {
+    background: #ff523b;
+    margin: 20px 0 15px 0;
+}
+
+.login-container .facebook a:hover {
+    background: #780e00;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+@media(max-width: 540px) {
+    .login-container {
+        max-width: 400px;
+        width: 90%;
+    }
 }
